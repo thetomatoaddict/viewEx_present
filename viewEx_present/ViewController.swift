@@ -16,7 +16,8 @@ class ViewController: UIViewController {
 
     @IBAction func goOrange(_ sender: UIButton) {
         let orangeVC = storyboard?.instantiateViewController(withIdentifier: "OrangeVC")
-        orangeVC?.modalTransitionStyle = .flipHorizontal
+        
+        orangeVC?.modalTransitionStyle = .coverVertical
         present(orangeVC!, animated: true, completion: nil)
     }
     
