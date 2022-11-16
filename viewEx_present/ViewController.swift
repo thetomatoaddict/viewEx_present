@@ -21,5 +21,17 @@ class ViewController: UIViewController {
         present(orangeVC!, animated: true, completion: nil)
     }
     
+    @IBAction func goRed(_ sender: UIButton) {
+        let redVC = storyboard?.instantiateViewController(withIdentifier: "redVC")
+        
+        redVC?.modalTransitionStyle = .coverVertical
+        present(redVC!, animated: true, completion: nil)
+    }
+    @IBAction func goGreen(_ sender: UIButton) {
+        let greenVC = storyboard?.instantiateViewController(withIdentifier: "greenVC")
+        
+        greenVC?.modalTransitionStyle = .coverVertical
+        present(greenVC!, animated: true, completion: nil)
+    }
 }
 
