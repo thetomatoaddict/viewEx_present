@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func goOrange(_ sender: UIButton) {
+        let orangeVC = storyboard?.instantiateViewController(withIdentifier: "OrangeVC")
+        orangeVC?.modalTransitionStyle = .flipHorizontal
+        present(orangeVC!, animated: true, completion: nil)
+    }
+    
 }
 
